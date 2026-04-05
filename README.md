@@ -37,7 +37,8 @@ In this example:
 - **rlink** serves as the bridge between Airwire and the flight controller, forwarding control data as **CRSF packets**.  
 - **rclient (Rope)** provides the web interface — here, a **TX16S joystick** is connected and actively transmitting channel values.  
 - The dashboard confirms **Airwire Health: ✅ Healthy**, indicating stable, low-latency communication across all layers.  
-- The **flight controller** is connected via **USB through an FTDI adapter**.  
+- The **flight controller** is connected via **USB**, either directly or through an **FT232 / FTDI adapter**.  
+- If you use an **FT232** adapter, use **FT_Prog** to enable **Invert TXD** and **Invert RXD** on the adapter.  
 
 This setup demonstrates the complete end-to-end control flow:
 
